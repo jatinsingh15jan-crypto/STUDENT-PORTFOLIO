@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>StudentVault</h1>
+        <p class="subtitle">Your skills. Your achievements. Your future.</p>
+
+        <div class="profile-card">
+
+            <div class="profile-photo">
+                👤
+            </div>
+
+            <h2 id="displayName">Your Name</h2>
+            <p id="displayCourse">Class / Course</p>
+
+            <div class="info">
+                <p><strong>🏫 School:</strong> <span id="displaySchool">Your School</span></p>
+                <p><strong>📍 Location:</strong> <span id="displayLocation">Your City</span></p>
+            </div>
+
+            <p id="displayBio">
+                Your short introduction will appear here.
+            </p>
+
+            <div class="links">
+                <a href="#" id="githubLink">GitHub</a>
+                <a href="#" id="socialLink">Social Profile</a>
+            </div>
+
+        </div>
+
+        <div class="form-card">
+
+            <h2>Create Your Profile</h2>
+
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="course" placeholder="Class / Course">
+            <input type="text" id="school" placeholder="School / College">
+            <input type="text" id="location" placeholder="City">
+            <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+            <input type="text" id="github" placeholder="GitHub URL">
+            <input type="text" id="social" placeholder="Social Profile URL">
+
+            <button onclick="createProfile()">Create Profile</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<div class="academic-card">
+
+    <h2>Academic Profile</h2>
+
+    <div class="academic-grid">
+
+        <div>
+            <label>Class / Course</label>
+            <input type="text" id="academicCourse" placeholder="e.g. Class 12">
+        </div>
+
+        <div>
+            <label>School / College</label>
+            <input type="text" id="academicSchool" placeholder="School / College">
+        </div>
+
+        <div>
+            <label>Stream</label>
+            <input type="text" id="stream" placeholder="e.g. Humanities">
+        </div>
+
+        <div>
+            <label>Academic Year</label>
+            <input type="text" id="academicYear" placeholder="e.g. 2026-27">
+        </div>
+
+    </div>
+
+    <button onclick="saveAcademicProfile()">
+        Save Academic Profile
+    </button>
+
+</div>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
